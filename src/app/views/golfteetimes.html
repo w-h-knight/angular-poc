@@ -1,0 +1,143 @@
+<div class="view golfteetimes">
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td >
+                            <label class="lbl">Tournament</label>
+                        </td>
+                        <td>
+                            <select id="tour"class="slt" style ="width:249px "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <label class="lbl">Course</label>
+                        </td>
+                        <td>
+                            <select id="course"class="slt" style ="width:241px "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <label class="lbl">Tee Sequence</label>
+                        </td>
+                        <td>
+                            <select id="teeseq"class="slt" style ="width:281px "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="otherseq" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+                        </td>
+                        <td>
+                            <label class="lbl">Other Sequence</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="lbl">Golfer</label>
+                        </td>
+                        <td>
+                            <select id="golfer"class="slt" style ="width:177px" ng-model="selectedgolfer" ng-options="golfer.LastName + ', ' + golfer.FirstName for golfer in golfers" ng-change="SetGolferInfo()"/>
+                        </td>
+                        <td>
+                            <button class="btn" type="button"  ng-click="DoSomething()" >Add&gt;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="noteetime" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+                        </td>
+                        <td>
+                            <label class="lbl">Without Tee Times</label>
+                        </td>
+                        <td>
+                            <button class="btn" type="button"  ng-click="DoSomething()" >&nbsp;&nbsp;&lt;</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td >
+                            <label class="lbl">Date</label>
+                        </td>
+                        <td>
+                            <input type="date" class="txt" style ="width:97px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <label class="lbl">Round</label>
+                        </td>
+                        <td>
+                            <select class="slt" style ="width:41px "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <label class="lbl">Tee Time</label>
+                        </td>
+                        <td>
+                            <input type="time" class="txt" style ="width:97px" />
+                        </td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td >
+                            <label class="lbl">Group</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <div style="border: 1px; border-color:#000000; width: 291px; height: 109px">
+                            <select  size = 6>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="btn" type="button" ng-click="changeView('/main')">Get Tee Times</button>
+                        </td>
+                        <td>
+                            <button class="btn" type="button" ng-click="changeView('/main')">Lookup Golfer</button>
+                        </td>
+                        <td>
+                            <button class="btn" type="button" ng-click="changeView('/main')">Update ALL Tee Times</button>
+                        </td>
+                        <td>
+                            <button class="btn" type="button" value="Save" name="Save" ng-click="changeView('/main')">Save</button>
+                        </td>
+                        <td>
+                            <button class="btn" type="button" value="Close" name="Close" ng-click="changeView('/main')">Close</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+       </tr>
+    </table>
+    <table class="status" >
+        <tr style="width:100%">
+            <td style="width: 80%; border: 2px inset">
+                <label> {{selectedleague.LeagueId}} </label>
+            </td>
+            <td style="width: 20%; border: 2px inset">
+                <label> {{selectedseason.Description}} </label>
+            </td>
+        </tr>
+    </table>
+</div>

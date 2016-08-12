@@ -1,0 +1,202 @@
+<div class="view golfcourses">
+    <table>
+        <tr>
+            <td >
+                <label class="lbl">Course Name</label>
+            </td>
+            <td>
+                <select id="course" class="slt" style="display:inline-block; width:281px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="courses" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+            </td>
+            <td>
+                <label class="lbl">Display only courses for season id</label>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Abbrev</label>
+            </td>
+            <td>
+                <input type="text" id="site" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Golf Club</label>
+            </td>
+            <td>
+                <select id="club" class="slt" style="display:inline-block; width:281px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <button class="btn" type="button" value="more" name="more" ng-click="changeView('/main')" >+</button>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Front 9 Par</label>
+            </td>
+            <td>
+                <input type="text" id="front9" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Back 9 Par</label>
+            </td>
+            <td>
+                <input type="text" id="back9" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Course Par</label>
+            </td>
+            <td>
+                <input type="text" id="coursepar" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Yardage</label>
+            </td>
+            <td>
+                <input type="text" id="yardage" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="lbl">Course Using Hole by Hole Scoring</label>
+            </td>
+            <td>
+                <input type="checkbox" name="holescoring" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">CourseHole by Hole Par</label>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">1   2   3   4   5   6   7   8   9</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">10   11   12   13   14   15   16   17   18</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+            <td>
+                <select class="slt" style="display:inline-block; width:41px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Feed Mapping Code By League</label>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">PGA Course ID</label>
+            </td>
+            <td>
+                <input type="text" id="PGAId" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">SGA Course ID</label>
+            </td>
+            <td>
+                <input type="text" id="SGAId" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">NTW Course ID</label>
+            </td>
+            <td>
+                <input type="text" id="NTDId" class="txt" style ="width:41px "/>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class="btn" type="button" value="Delete" name="Delete" ng-click="changeView('/main')" >Delete</button>
+            </td>
+            <td>
+                <button class="btn" type="button" value="Add" name="Add" ng-click="changeView('/main')" >Add</button>
+            </td>
+            <td>
+                <button class="btn" type="button" value="View" name="View" ng-click="changeView('/main')" >View</button>
+            </td>
+            <td>
+                <button class="btn" type="button" value="Edit" name="Edit" ng-click="changeView('/main')" >Edit</button>
+            </td>
+            <td>
+                <button class="btn" type="button" value="Save" name="Save" ng-click="changeView('/main')" >Save</button>
+            </td>
+            <td>
+                <button class="btn" type="button" value="Close" name="Close" ng-click="changeView('/main')" >Close</button>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,96 @@
+<golf-header/>
+<div class="view golfentrants">
+    <table>
+        <tr>
+            <table>
+                <tr>
+                    <td style="width:16px;"> </td>
+                    <td>
+                        <ng-switch on="tournaments.length">
+                            <label class="lbl" style="display:inline-block; width:124px" ng-switch-when="0">Tournament</label>
+                            <select class="slt" style="display:inline-block; width:250px;" ng-switch-when="0">
+                                <option selected>Loading tournaments</option>
+                            </select>
+                            <label class="lbl" style="display:inline-block; width:124px">Tournament</label>
+                            <select id="tour" class="slt" style ="display:inline-block; width:249px" ng-switch-default ng-disabled="loading==true" ng-model="selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                        </ng-switch>
+                    </td>
+                    <td style="width:220px; text-align: right;" >
+                        <input type="checkbox" name="allleagues" value="ALL">Include golfers from ALL leagues
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <table>
+                <tr>
+                    <td style="width:16px;"> </td>
+                    <td style="width:200px; text-align: left;">
+                        <label class="lbl">Tournament Started</label>
+                    </td>
+                    <td style="width:126px; text-align: right;" >
+                        <input type="radio" name="TournStarted" value="Y">Yes
+                    </td>
+                    <td style="width:40px; text-align: right;" >
+                        <input type="radio" name="TournStarted" value="N">No
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <table>
+                <tr>
+                    <td style="width:16px; vertical-align: top;"> </td>
+                    <td style="vertical-align: top;">
+                        <ng-switch on="tournplayers.length">
+                            <label class="lbl" style="display:inline-block; width:96px;" ng-switch-when="0">Golfer</label>
+                            <select class="slt" style="display:inline-block; width:280px;" ng-switch-when="0">
+                                <option selected>Loading tournament players</option>
+                            </select>
+                            <label class="lbl" style="display:inline-block; width:96px;" ng-switch-default >Golfer</label>
+                            <select id="golfer"class="slt" style ="display:inline-block; width:280px;" ng-disabled="loading==true" ng-switch-default ng-model="selectedplayer" ng-options="p.LastName+ ',' + p.FirstName for p in tournplayers"/> <!--+ ',' + p.FirstName-->
+                        </ng-switch>
+                    </td>
+                    <td>
+                        <table style="display:inline-table">
+                            <tr>
+                                <td>
+                                    <button class='btn' type="button" style="width:73px;">Add &gt</button>
+                                </td>
+                                <td style="width:128px;">
+                                    <label class="lbl">Tournament Entrants</label>
+                                </td>
+                                <td>
+                                    <label class="lbl">{{ playercount }}</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <button class='btn' type="button" style="width:73px;">&lt</button>
+                                </td>
+                                <td style="height: 160px; vertical-align: top;">
+                                    <ul style="border: 1px">
+                                        <li>TEST 1</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <table>
+                <tr>
+                    <td style="width:500px;"> </td>
+                    <td>
+                        <button class="btn" type="button" value="Save" name="Save" ng-click="common.changeView('/main')">Save</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="Close" name="Close" ng-click="common.changeView('/main')">Close</button>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+</div>

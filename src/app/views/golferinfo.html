@@ -1,0 +1,93 @@
+﻿<div class="view golferinfo">
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td >
+                        <label class="lbl">Tour</label>
+                    </td>
+                    <td>
+                        <select id="leagueID" class="slt" style="display:inline-block; width:70px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()">
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Golfer</label>
+                    </td>
+                    <td>
+                        <select id="golfer"class="slt" style ="width:210px" ng-model="selectedgolfer" ng-options="golfer.LastName + ', ' + golfer.FirstName for golfer in golfers" ng-change="SetGolferInfo()"/>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Country</label>
+                    </td>
+                    <td>
+                        <select id="country"class="slt" style ="width:160px " ng-model="selectedcountry" ng-options="country.CountryName for country in countries"/>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Always Track On Leaderboard</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="track" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Amateur</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="amateur" ng-model="selectedgolferdetail.Amateur" ng-true-value="Y"/>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <label class="lbl">Major Golfer</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="majorgolfer" ng-model="selectedgolferdetail.MajorGolfer" ng-true-value="Y"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Player Log Slug</label>
+                    </td>
+                    <td>
+                        <input type="text" name="slug" ng-model="selectedgolferdetail.PlayerSlugName"/>
+                    </td>
+                    <td> 
+                        <button>AutoCreate</button>
+                    </td>
+                </tr>
+           </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <table style="margin-top:48px">
+            <tr>
+                <td>
+                    <button class= "btn" style="margin-right: 12px" type="button" value="Resolve Golfers" name="ResolveGolfers" ng-click="changeView('/resolvegolferids')">Resolve Golfers</button>
+                </td>
+                <td>
+                    <button class= "btn" style="margin-right: 24px" type="button" value="Add Golfer" name="AddGolfer" ng-click="changeView('/addgolfer')">Add Golfer</button>
+                </td>
+                <td>
+                    <button class="btn" type="button" value="Save" name="Save" ng-click="changeView('/main')" >Save</button>
+                </td>
+                <td>
+                    <button class="btn" type="button" value="Close" name="Close" ng-click="changeView('/main')" >Close</button>
+                </td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</div>

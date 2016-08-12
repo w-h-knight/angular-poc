@@ -1,0 +1,282 @@
+<div class="view golftournaments">
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td >
+                        <label class="lbl">Tournament</label>
+                    </td>
+                    <td>
+                        <select id="tournament" class="slt" style="display:inline-block; width:250px" ng-disabled="!$parent.selectedtournament" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Feed Tournament ID</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">ScheduleId</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:249px" ng-disabled="true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Start Date</label>
+                    </td>
+                    <td>
+                        <input type="date" class="txt" style ="width:89px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Ticker Slug</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:153px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Time Zone</label>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:89px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:89px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Rounds</label>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:49px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Cut Round</label>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:49px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Feed Tournament ID</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:81px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">IDS Tournament ID</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:81px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Class</label>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:97px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="more" name="more" ng-click="changeView('/main')" >+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:241px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" type="button" ng-click="DoSomething()" >Add&gt;</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button"  ng-click="DoSomething()" >&lt;Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Corrected Name</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:241px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Projected Cut Count (i.e. Top X and ties)</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:57px"/>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Scoring Input Type</label>
+                    </td>
+                    <td>
+                        <input type="radio" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+                    </td>
+                    <td>
+                        <label class="lbl">Hole By Hole</label>
+                    </td>
+                    <td>
+                        <input type="radio" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+                    </td>
+                    <td>
+                        <label class="lbl">Round</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">End Date</label>
+                    </td>
+                    <td>
+                        <input type="date" class="txt" style ="width:89px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Ticker Series</label>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="more" name="more" ng-click="changeView('/main')" >+</button>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:193px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Format</label>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:113px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Feed Status</label>
+                    </td>
+                    <td>
+                        <select class="slt" style="display:inline-block; width:161px" ng-model="$parent.selectedtournament" ng-options="t.Tournname for t in tournaments"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Cut Score (i.e. -1,E, +2)</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:57px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <label class="lbl">Purse</label>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" style ="width:89px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">OverRide Feed</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="overridefeed" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Tournament Courses (host cours listed first)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table cellspacing="0">
+                                        <tr>
+                                            <th class="tblhdr" ng:click="">Course Name</th>
+                                            <th class="tblhdr" ng:click="">PGA ID</th>
+                                            <th class="tblhdr" ng:click="">SGA ID</th>
+                                            <th class="tblhdr" ng:click="">NTW ID</th>
+                                            <th class="tblhdr" ng:click="">Course ID</th>
+                                        </tr>
+                                        <tr ng-repeat="course in courses">
+                                            <td class="tbldata_first">{{course.CourseName}}</td>
+                                            <td class="tbldata">{{course.PGAID}}</td>
+                                            <td class="tbldata">{{course.SGAID}}</td>
+                                            <td class="tbldata">{{course.NTWID}}</td>
+                                            <td class="tbldata">{{course.CourseID'}}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">Projected cut '10 shot rule'</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="projectedcut" ng-model="selectedgolferdetail.AlwaysOnLeaderBoard" ng-true-value="Y">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">(i.e. include golfers within 10 shots of lead)</label>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <button class="btn" type="button" ng-click="changeView('/main')" >Early Finish/Notes</button>
+                    </td>
+                    <td>
+                        <label class="lbl">View Mode</label>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="Add" name="Add" ng-click="changeView('/main')" >Add</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="View" name="View" ng-click="changeView('/main')" >View</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="Edit" name="Edit" ng-click="changeView('/main')" >Edit</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="Save" name="Save" ng-click="changeView('/main')" >Save</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="Close" name="Close" ng-click="changeView('/main')" >Close</button>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</div>

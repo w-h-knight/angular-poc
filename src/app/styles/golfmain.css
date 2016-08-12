@@ -1,0 +1,30 @@
+.golfmain {
+    background-color: #fff;
+    color: #000;
+    font-size: 9pt;
+    font-family: Arial, Verdana, Helvetica, Sans-Serif;
+    background:url('../images/GolfCourse.png') fixed center center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+    .golfmain .btn {
+        background: url('../Golf.ico') no-repeat;
+        background-color:  #ffc0c0;
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        color: navy;
+        cursor: pointer;
+        font-family: Arial;
+        font-size: 11.25pt;
+        font-weight: bold;
+        margin-top: 24px;
+        margin-left: 32px;
+        width: 197px;
+        height: 32px;
+    }

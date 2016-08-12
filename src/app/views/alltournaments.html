@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="styles/alltournaments.css">
+<div class="view alltournaments">
+    <table>
+        <tr>
+            <td>
+                <table cellspacing="0">
+                    <tr>
+                        <th class="tblhdr" ng:click="">Schedule Id</th>
+                        <th class="tblhdr" ng:click="">Tournament Name</th>
+                        <th class="tblhdr" ng:click="">PGA Tourn Id</th>
+                        <th class="tblhdr" ng:click="">Tourn Id</th>
+                        <th class="tblhdr" ng:click="">Start Date</th>
+                        <th class="tblhdr" ng:click="">End Date</th>
+                        <th class="tblhdr" ng:click="">Status</th>
+                        <th class="tblhdr" ng:click="">Type</th>
+                    </tr>
+                    <tr ng-repeat="tourn in tournaments">
+                        <td class="tbldata_first">{{tourn.Scheduleid}}</td>
+                        <td class="tbldata">{{tourn.Tournname}}</td>
+                        <td class="tbldata">{{tourn.TournId}}</td>
+                        <td class="tbldata">{{tourn.PgaTournid}}</td>
+                        <td class="tbldata">{{tourn.StartDate | date: 'MM/dd/yyyy'}}</td>
+                        <td class="tbldata">{{tourn.EndDate | date: 'MM/dd/yyyy'}}</td>
+                        <td class="tbldata">{{tourn.StatusDesc}}</td>
+                        <td class="tbldata">{{tourn.TypeDesc}}</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="margin-top:12px">
+                    <tr>
+                        <td>
+                            <button class="btn" type="button" value="Close" name="Close" ng-click="changeView('/settings')" >Close</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="status" >
+        <tr style="width:100%">
+            <td style="width: 20%; border: 2px inset">
+                <label> {{selectedseason.Description}} </label>
+            </td>
+            <td style="width: 80%; border: 2px inset">
+                <label> {{tournaments.length}} tournaments</label>
+            </td>
+        </tr>
+    </table>
+
+</div>

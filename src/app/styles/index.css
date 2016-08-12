@@ -1,0 +1,244 @@
+﻿.view
+{
+    background-color: #f2f2f2;
+    background-size : cover;
+    color: #000;
+    font-size: 9pt;
+    font-family: Arial, Verdana, Helvetica, Sans-Serif;
+    margin-top: 32px;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.lbl
+{
+    color: black;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+}
+.btndisabled
+{
+    background-color: lightgray;
+    color: dimgray;
+}
+.btn
+{
+    background-color: #f2f2f2;
+    color: black;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: normal;
+}
+
+.slt
+{
+    /*background: green;
+    background-image: -ms-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+    background-image: -o-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f2f2f2), color-stop(1, #dadada));
+    background-image: -webkit-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+    background-image: linear-gradient(left, #f2f2f2 0%, #dadada 100%);*/
+    background: linear-gradient(0deg, #cfcfcf, #f2f2f2);
+}
+
+.tblhdr
+{
+    border-style : outset;
+    background-image: -ms-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+    background-image: -o-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f2f2f2), color-stop(1, #dadada));
+    background-image: -webkit-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+    background-image: linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+    background: linear-gradient(0deg, lightskyblue, #ffffff);
+}
+
+.tbldata_first
+{
+    border-left: 1px solid #b3b3b3;
+    border-right: 1px solid #b3b3b3;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.tbldata
+{
+    border-right: 1px solid #b3b3b3;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.status {
+    background-color: Window;
+    position: absolute;
+    bottom: 0;
+    width : 100%;
+}
+/*.mymain {
+    background-color: #fff;
+    color: #000;
+    font-size: .85em;
+    font-family: Arial, Verdana, Helvetica, Sans-Serif;
+    background:url('../images/GolfCourse.png') fixed center center;
+    background-size: cover;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+    .mymain .btn {
+        background: url('../Golf.ico') no-repeat;
+        background-color:  #ffc0c0;
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        color: navy;
+        cursor: pointer;
+        font-family: Arial;
+        font-size: 11.25pt;
+        font-weight: bold;
+        margin-top: 24px;
+        margin-left: 32px;
+        width: 197px;
+        height: 32px;
+    }
+
+.settings
+{
+    background-color: #f2f2f2;
+    background-size : cover;
+    color: #000;
+    font-size: .85em;
+    font-family: Arial, Verdana, Helvetica, Sans-Serif;
+    margin-top: 48px;
+}
+
+    .settings .btn
+    {
+        background-color: #f2f2f2;
+        color: black;
+        font-family: Arial;
+        font-size: 9pt;
+        font-weight: normal;
+    }
+
+    .settings .slt
+    {
+        background: green;
+        background-image: -ms-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background-image: -o-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f2f2f2), color-stop(1, #dadada));
+        background-image: -webkit-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background-image: linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background: linear-gradient(0deg, #cfcfcf, #f2f2f2);
+    }
+
+.golferinfo
+{
+    background-color: #f2f2f2;
+    background-size : cover;
+    color: #000;
+    font-size: 8pt;
+    font-family: Arial;
+    font-weight: normal;
+    margin-top: 48px;
+}
+
+    .golferinfo .lbl
+    {
+        color: black;
+        font-family: Arial;
+        font-size: 9pt;
+        font-weight: bold;
+    }
+
+    .golferinfo .slt
+    {
+        background: green;
+        background-image: -ms-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background-image: -o-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f2f2f2), color-stop(1, #dadada));
+        background-image: -webkit-linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background-image: linear-gradient(left, #f2f2f2 0%, #dadada 100%);
+        background: linear-gradient(0deg, #cfcfcf, #f2f2f2);
+    }
+*/
+
+/*input, textarea {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #333;
+    font-size: 1.2em;
+    margin: 5px 0 6px 0;
+    padding: 5px;
+    width: 300px;
+}
+
+textarea {
+    font-family: inherit;
+    width: 500px;
+}
+
+    input:focus, textarea:focus {
+        border: 1px solid #7ac0da;
+    }
+
+    input[type="checkbox"] {
+        background: transparent;
+        border: inherit;
+        width: auto;
+    }*/
+
+    /*input[type="submit"],
+    input[type="button"],
+    button {
+        background-color: #ffc0c0;
+        border: 1px solid #ffffff;
+        color: navy;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 7px;
+        margin-right: 8px;
+        width: auto;
+    }
+
+    td input[type="submit"],
+    td input[type="button"],
+    td button {
+        font-size: 1em;
+        padding: 4px;
+        margin-right: 32px;
+    }*/
+
+/* page elements
+----------------------------------------------------------*/
+/* featured */
+/*.featured {
+    background-color: #fff;
+}
+
+    .featured .content-wrapper {
+        background-color: #7ac0da;
+        background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+        background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
+        background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+        background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+        color: #3e5667;
+        padding: 20px 40px 30px 40px;
+    }
+
+        .featured hgroup.title h1, .featured hgroup.title h2 {
+            color: #fff;
+        }
+
+        .featured p {
+            font-size: 1.1em;
+        }*/

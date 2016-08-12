@@ -1,0 +1,81 @@
+﻿<div class="view resolvegolferids">
+    <table>
+        <tr>
+            <td>
+            <table>
+                <tr>
+                    <td>
+                        <label class="lbl">Get Option</label>
+
+                    </td>
+                    <td id="cell" style="width: 60%">
+                        <input type="radio" name="Option" value="all" />Missing DG ID (All)<br/>
+                        <input type="radio" name="Option" value="stats" />Missing DG ID (With Stats)<br/>
+                        <input type="radio" name="Option" value="id" />Having DG ID
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">DG ID (used for 'Having DG ID option)</label>
+                    </td>
+                    <td>
+                        <input type="text" name="DGID" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">New/Updated DG ID</label>
+                    </td>
+                    <td>
+                        <input type="text" name="NewDGID" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="lbl">New/Updated PGA ID</label>
+                    </td>
+                    <td>
+                        <input type="text" name="PGAID" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="1" style="width:377px; height:273px">
+                            <tr style="height:24px">
+                                <th>Golfer Id</th>
+                                <th>DG Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>PGA Id</th>
+                            </tr>
+                            <tr></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Currently selected golfer.
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+             <table style="margin-top:16px">
+                <tr>
+                    <td>
+                        <button class= "btn" style="margin-right: 190px" type="button" value="GetGolfers" name="GetGolfer" >Get</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="Update" name="Update" onclick="location.href='@Url.Action("Index","Home")';" >Update</button>
+                    </td>
+                    <td>
+                        <button class="btn" type="button" value="Close" name="Close" onclick="location.href='@Url.Action("Index","Home")';" >Close</button>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+</div>

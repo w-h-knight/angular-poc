@@ -1,0 +1,31 @@
+<div class="view golfhelp">
+    <table>
+        <tr>
+            <td >
+                <label class="lbl">Category</label>
+            </td>
+            <td>
+                <select id="category" class="slt" style="display:inline-block; width:409px;" ng-model="golferselectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetGolfers()"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="help" class="txt" style ="width:417px; height: 585px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Search</label>
+            </td>
+            <td>
+                <input type="text" id="search" class="txt" style ="width:141px "/>
+            </td>
+            <td>
+                <button class="btn" type="button" ng-click="DoSomething" >Search Next</button>
+            </td>
+            <td>
+                <button class="btn" type="button" value="Close" name="Close" ng-click="changeView('/main')" >Close</button>
+            </td>
+        </tr>
+    </table>
+</div>

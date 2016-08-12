@@ -1,0 +1,41 @@
+<div class="view addgolfer">
+    <table>
+        <tr>
+            <td >
+                <label class="lbl">ST2000 Golfers without player id/name in GOLFERS table</label>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Tour</label>
+            </td>
+            <td>
+                <select id="tour" class="slt" style ="width:60px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Golfer</label>
+            </td>
+            <td>
+                <select id="golfer"class="slt" style ="width:140px "/>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label class="lbl">Country (if not U.S.)</label>
+            </td>
+            <td>
+                <select id="country"class="slt" style ="width:140px "/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn" type="button" value="Save" name="Save" ng-click="changeView('/main')" >Save</button>
+            </td>
+            <td>
+                <button class="btn" type="button" value="Close" name="Close" ng-click="changeView('/main')" >Close</button>
+            </td>
+        </tr>
+    </table>
+</div>

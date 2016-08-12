@@ -1,0 +1,66 @@
+<golf-header/>
+<div class="view settings">
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td >
+                            <ng-switch on="leagues.length">
+                                <label class="lbl" style="display:inline-block; width:208px" ng-switch-when="0">Tour</label>
+                                <select class="slt" style="display:inline-block; width:120px;" ng-switch-when="0">
+                                    <option selected>Loading leagues</option>
+                                </select>
+                                <label class="lbl" style="display:inline-block; width:258px" ng-switch-default>Tour</label>
+                                <select id="leagueID" class="slt" style="display:inline-block; width:70px;" ng-disabled="loading==true" ng-switch-default ng-model="data.selectedleague" ng-options="league.LeagueId for league in leagues" ng-change="GetSeasons()"/>
+                            </ng-switch>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ng-switch on="seasons.length">
+                                <label class="lbl" style="display:inline-block; width:200px" ng-switch-when="0">Season Id</label>
+                                <select class="slt" style="display:inline-block; width:128px;" ng-switch-when="0">
+                                    <option selected>Loading seasons</option>
+                                </select>
+                                <label class="lbl" style="display:inline-block; width:238px" ng-switch-default>Season Id</label>
+                                <select id="season"class="slt" style="display:inline-block; width:90px" ng-disabled="loading==true" ng-switch-default ng-model="data.selectedseason" ng-options="s.Description for s in seasons" ng-change ="GetTournaments()">
+                                </select>
+                            </ng-switch>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ng-switch on="tournaments.length">
+                                <label class="lbl" style="display:inline-block; width:78px" ng-switch-when="0">Tournament</label>
+                                <select class="slt" style="display:inline-block; width:250px;" ng-switch-when="0">
+                                    <option selected>Loading tournaments</option>
+                                </select>
+                                <label class="lbl" style="display:inline-block; width:78px" ng-switch-default>Tournament</label>
+                                <select id="tournament" class="slt" style="display:inline-block; width:250px" ng-disabled="loading==true" ng-switch-default ng-model="data.selectedtournament" ng-options="t.Tournname for t in tournaments" ng-change="SetTournament()">
+                                </select>
+                            </ng-switch>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="margin-top:48px">
+                    <tr>
+                        <td>
+                            <button ng-class="loading==true ? 'btndisabled' : 'btn'" ng-disabled="loading==true" style="margin-right: 176px" type="button" value="View All" name="ViewAll" ng-click="common.changeView('/alltournaments')" >View All</button>
+                        </td>
+                        <td>
+                            <button ng-class="loading==true ? 'btndisabled' : 'btn'" ng-disabled="loading==true" type="button" value="Save" name="Save" ng-click="common.changeView('/main')" >Save</button>
+                        </td>
+                        <td>
+                            <button class="btn" type="button" value="Close" name="Close" onclick="CloseBrowser()" >Close</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
